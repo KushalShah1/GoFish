@@ -6,37 +6,29 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/kusha/Desktop/312/GoFish/card.cpp
-card.h
-C:/Users/kusha/Desktop/312/GoFish/card.h
-
 C:/Users/kusha/Desktop/312/GoFish/card.h
 iostream
 -
 string
 -
 
-C:/Users/kusha/Desktop/312/GoFish/deck.cpp
-ctime
--
-cstdlib
--
-deck.h
-C:/Users/kusha/Desktop/312/GoFish/deck.h
-
 C:/Users/kusha/Desktop/312/GoFish/deck.h
 card.h
 C:/Users/kusha/Desktop/312/GoFish/card.h
 
-C:/Users/kusha/Desktop/312/GoFish/main.cpp
+C:/Users/kusha/Desktop/312/GoFish/go_fish.cpp
 iostream
 -
-
-C:/Users/kusha/Desktop/312/GoFish/player.cpp
 cstdlib
 -
+fstream
+-
+card.h
+C:/Users/kusha/Desktop/312/GoFish/card.h
 player.h
 C:/Users/kusha/Desktop/312/GoFish/player.h
+deck.h
+C:/Users/kusha/Desktop/312/GoFish/deck.h
 
 C:/Users/kusha/Desktop/312/GoFish/player.h
 iostream

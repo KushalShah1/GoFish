@@ -8,7 +8,10 @@ CMakeFiles/GoFish.dir/deck.cpp.obj: ../card.h
 CMakeFiles/GoFish.dir/deck.cpp.obj: ../deck.cpp
 CMakeFiles/GoFish.dir/deck.cpp.obj: ../deck.h
 
-CMakeFiles/GoFish.dir/main.cpp.obj: ../main.cpp
+CMakeFiles/GoFish.dir/go_fish.cpp.obj: ../card.h
+CMakeFiles/GoFish.dir/go_fish.cpp.obj: ../deck.h
+CMakeFiles/GoFish.dir/go_fish.cpp.obj: ../go_fish.cpp
+CMakeFiles/GoFish.dir/go_fish.cpp.obj: ../player.h
 
 CMakeFiles/GoFish.dir/player.cpp.obj: ../card.h
 CMakeFiles/GoFish.dir/player.cpp.obj: ../player.cpp

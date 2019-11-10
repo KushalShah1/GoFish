@@ -41,9 +41,9 @@ Card Player::removeCardFromHand(Card c) {
 }
 
 string Player::showHand() const {
-    string hand;
+    string hand="\n";
     for(Card c: myHand){
-        hand+=c.toString()+"/n";
+        hand+=c.toString()+"\n";
     }
     return hand;
 }
@@ -60,5 +60,17 @@ int Player::getHandSize() const {
     return myHand.size();
 }
 int Player::getBookSize() const {
-    return myBook.size();
+    return myBook.size()/2;
+}
+bool Player::checkHandForBook(Card &c1, Card &c2){
+    for(int i=0; i<myHand.size()-1;i++){
+        for(int j=i+1;j<myHand.size();j++){
+            if(myHand.at(i)==myHand.at(j)){
+                c1=myHand.at(i);
+                c2=myHand.at(j);
+                return true;
+            }
+        }
+    }
+    return false;
 }
