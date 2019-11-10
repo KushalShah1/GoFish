@@ -29,12 +29,10 @@ bool Player::cardInHand(Card c) const {
 }
 
 Card Player::removeCardFromHand(Card c) {
-    if(cardInHand(c)){
-        for(int i=0; i<myHand.size();i++){
-            if(myHand.at(i)==c){
-                myHand.erase(myHand.begin()+i);
-                return c;
-            }
+    for(int i=0; i<myHand.size();i++){
+        if(myHand.at(i)==c){
+            myHand.erase(myHand.begin()+i);
+            return c;
         }
     }
     return c;
@@ -63,6 +61,8 @@ int Player::getBookSize() const {
     return myBook.size()/2;
 }
 bool Player::checkHandForBook(Card &c1, Card &c2){
+    if(myHand.size()<=0)
+        return false;
     for(int i=0; i<myHand.size()-1;i++){
         for(int j=i+1;j<myHand.size();j++){
             if(myHand.at(i)==myHand.at(j)){
